@@ -1,6 +1,8 @@
 CONSTANTS_AND_UNITS
 ===================
 
+[![DOI](https://zenodo.org/badge/84933945.svg)](https://zenodo.org/badge/latestdoi/84933945)
+
 A very simple class to hold physical and mathematical constants and unit
 conversion methods.
 
