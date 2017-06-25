@@ -12,7 +12,7 @@ Date: 20170314
 classdef constants < handle 
 %----------------------------------------------------------------------
     properties (Constant = true) % Fundamental physical magnitudes in SI
-        qe = 1.60217646e-19;        % Electron charge [C]
+        qe = 1.60217646e-19;        % Electron charge (absolute value) [C]
         me = 9.10938188e-31;        % Electron mass [kg]
         kB = 1.3806503e-23;         % Boltzmann Constant [J/K]
         eps0 = 8.854187817e-12;     % Permittivity of vacuum [F/m]
@@ -34,17 +34,33 @@ classdef constants < handle
             % Energy: eV to J
             out = in * constants_and_units.constants.qe;
         end
-        function out = J2eV(in)
-            % Energy: J to eV
-            out = in / constants_and_units.constants.qe;
-        end
         function out = eV2K(in)
             % Energy/temperature: eV to K
             out = in * constants_and_units.constants.qe / constants_and_units.constants.kB;
         end
+        function out = J2eV(in)
+            % Energy: J to eV
+            out = in / constants_and_units.constants.qe;
+        end
+        function out = J2K(in)
+            % Energy/temperature: J to K
+            out = in / constants_and_units.constants.kB;
+        end
         function out = K2eV(in)
             % Energy/temperature: K to eV
             out = in / constants_and_units.constants.qe * constants_and_units.constants.kB;
+        end
+        function out = K2J(in)
+            % Energy/temperature: K to J
+            out = in * constants_and_units.constants.kB;
+        end
+        function out = amu2kg(in)
+            % mass: amu (atomic mass units) to kg
+            out = in*1.660538782e-27;
+        end
+        function out = kg2amu(in)
+            % mass: kg to amu (atomic mass units)
+            out = in/1.660538782e-27;
         end
     end
 %----------------------------------------------------------------------
