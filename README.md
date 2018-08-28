@@ -37,8 +37,10 @@ subdirectory.
 
 If you have any comments for improvement or 
 are interested in contributing to the continued 
-development of this or any of my other codes, you can contact me 
-through my [personal website](http://mariomerino.uc3m.es/).
+development of this or any of my other codes, you can contact us
+through our [website](http://ep2.uc3m.es/). 
+
+For updates and news, follow us on Twitter: @ep2lab.
   
 ## License
 
