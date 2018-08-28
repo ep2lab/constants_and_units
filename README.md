@@ -9,7 +9,7 @@ conversion methods.
 ## Installation
 
 Installation requires simply that you 
-[download CONSTANTS_AND_UNITS](https://github.com/mariomerinomartinez/constants_and_units/archive/master.zip) 
+[download CONSTANTS_AND_UNITS](https://github.com/ep2lab/constants_and_units/archive/master.zip) 
 and add the base directory (the one that contains the `+constants_and_units` 
 directory) to your Matlab path.
 
